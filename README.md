@@ -1,1 +1,1 @@
-Repostory for my portfolio. Special thanks to jmcglone.github.io for template.
+Repository for my portfolio. Special thanks to jmcglone.github.io for the template.
