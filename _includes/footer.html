@@ -1,38 +1,14 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <!--<li>{{ site.title }}</li>-->
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
+<div class="footer">
+	<div class="row">
+	<div class="col-sm-8">
+	<p><small>&copy; Ashish Sirohi 2017</small></p>
+	</div>
+	<div class="col-sm-4">
+	<p class="pull-right">{% include _icons/github.html %}
+	{% include _icons/linkedin.html %}
+	{% include _icons/facebook.html %}
+	{% include _icons/twitter.html %}
+	{% include _icons/email.html %}</p>
+	</div>
+	</div>
+</div><!-- /footer -->
