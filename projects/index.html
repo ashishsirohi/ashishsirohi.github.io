@@ -9,15 +9,91 @@ asu: passive
 description: Projects by Ashish Sirohi
 ---
 <div class="projects">
-  <h3>Coming Soon!!</h3>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <h3>List of my Academic/Independent Projects</h3>
+  <hr>
+  <ol>
+      <li><p><b><a href = "#project1">Network Science Research Tool Project</a></b></p></li>
+      <li><p><b><a href = "#project2">Extraction, Ranking & Indexing of Multimedia Features</a></b></p></li>
+      <li><p><b><a href = "#project3">Android App for Tempe City Orbit Bus Service</a></b></p></li>
+      <li><p><b><a href = "#project4">IP Reflector</a></b></p></li>
+      <li><p><b><a href = "#project5">Project CTF(Capture the Flag)</a></b></p></li>
+      <li><p><b><a href = "#project6">HTTP 1.1 Server from scratch in C with Backdoor functionality</a></b></p></li>
+      <li><p><b><a href = "#project7">QA System for Research Papers and Ranking using MLN </a></b></p></li>
+      <li><p><b><a href = "#project8">Analyzing Geospatial Data and Finding NY Taxi Hotspots using GeoSpark (Hadoop)</a></b></p></li>
+      <li><p><b><a href = "#project9">Restaurant Menu Web App with CRUD Functionality</a></b></p></li>
+      <li><p><b><a href = "#project10">Help Me - Windows Phone App</a></b></p></li>
+  </ol>
+  <hr>
+
+  <a name="project1"></a>  
+  <div style="float: left" ><h3>Network Science Research Tool</h3></div><br>
+                <div style="float: right">[ASU, Fall 2016]</div>
+        </br></br>
+        <h4>Summary</h4>
+        <p>Today, we all know the importance of connectivity or being online. If we weren't connected now, you were not be reading this. Millions of emails, messages, confidential information are travelling via network from one node to another on daily basis. Even if this network goes down for few seconds, world comes to a stand still. And there are many kind of disasters happeing around like Tsunami, Hurricane, Floods etc., may affect the connectivity of networks. Thus, it is important to have a robust network which is immune to such faults. But the big challenge here is, as network might be over a vast geographical area, it is difficult to test the robustness of the network. In this project, we have build a tool (based on a approach given in a <a href="http://ieeexplore.ieee.org/document/7470837/" target="_blank">research paper</a> published by <a href="http://www.public.asu.edu/~halla/" target="_blank">Dr. Sen</a> and team) that helps us estimate the impact of such disasters(fault) on a given network.</p>
+
+        <h4>My Contribution</h4>
+        <ul>
+          <li>Designed the high level architecture of the web application</li>
+          <li>Intergarated the Google Maps in the front end and made it fully interactive so that user can design a new network, edit existing one, delete/update nodes, edges in the graph etc.</li>
+          <li>Desgined the database for the application</li>
+          <li>Developed different request handlers(server as well as client side) to and from server</li>
+          <li>Used results from different algorithms(developed by other contributors) for testing generic and specified fault for a given network infrastructure</li>
+          <li>Integration of differet modules, in and out testing and deployement of the web app on ASU server</li>
+        </ul>
+
+        <h4 style="display:inline">Tech Used: </h4>Pyhton, Django, PostgreSQL(PostGIS), JavaScript, HTML, Bootstrap, jQuery</br>
+        
+        <h4 style="display:inline">Github Link: </h4><a target="_blank" href="https://github.com/ashishsirohi/NSRTP">NSRTP</a></br>
+
+        <h4 style="display:inline">Contributors: </h4><a target="_blank" href="">Abhishek Bhat</a>, <a target="_blank" href="http://ashishsirohi.me">Ashish Sirohi</a>, <a target="_blank" href="">Gurumurthy Raghuraman</a></br>
+       <hr>
+
+  <a name="project2"></a>
+  <div style="float: left" ><h3>Extraction, Ranking & Indexing of Multimedia Features</h3></div><br>
+                <div style="float: right">[ASU, Fall 2016]</div>
+        </br></br>
+        <h4>Summary</h4>
+        <p>We are living in an era where information/data is increasing substantially on daily basis and we need to organize, store that information so that it can be used later by the users. And when we say word “Information”, it can be of any type like numerical, text based, image, video etc., also it can be further divided in to two categories i.e. relevant and irrelevant information. So here we are dealing with two situations i.e. first, how to go about organize and storing this information so that it can be retrieved efficiently later on and second, how to get the perfect and optimized result from the stored information. This project is mainly focused on second part where we have used different feature extraction techniques which we are going to discuss further in detail in different sections. And using these extraction techniques we will try to compute the distance and similarity between the two multimedia objects. And later on using <a target="_blank" href="http://ilpubs.stanford.edu:8090/361/">PageRank Algorithm</a>, we will create a relevancy graph and rank them. Also, we have used some dimension reduction and indexing techniqes to make search more efficient</p>
+
+        <h4>My Contribution</h4>
+        <ul>
+          <li>Extracted different multimedia(video) features like histogram, sift vectors, motion vectors using MATLAB</li>
+          <li>Performed subsequence search for similar frames on a multimedia database based on different similarity measures like Cosine Similarity, Ecludian distance, Mahalanobis distance etc.</li>
+          <li>Generated similarity graph for video frames and found most significant frames using PageRank Algorithm</li>
+          <li>Performed dimensionality reduction using PCA & LSH for fast query processing</li>
+        </ul>
+
+        <h4 style="display:inline">Tech Used: </h4>Pyhton, MATLAB Scripting, Visual basic</br>
+        
+        <h4 style="display:inline">Github Link: </h4>Will be available soon</br>
+
+        <h4 style="display:inline">Contributors: </h4><a target="_blank" href="">Aditi Sonik</a>, <a target="_blank" href="">Abhishek Bhat</a>, <a target="_blank" href="http://ashishsirohi.me">Ashish Sirohi</a>, <a target="_blank" href="">Gurumurthy Raghuraman</a>, <a target="_blank" href="">Meenakshi</a>, <a target="_blank" href="">Vashudha</a></br>
+        <hr>
+        
+
+        <h4>Work in Progress for remaining projects</h4>
+
+  <!--<a name="project3"></a>
+  <div style="float: left"><b>Android App for Tempe City Orbit Bus Service</b></div>
+                <div style="float: right">[ASU, Fall 2016]</div>
+        </br>
+        <ul>
+          <li>Developed different UIs for users and drivers with login/signup featureMaintained a centralized database for bus full & change route status (controlled by driver)</li>
+          <li>Maintained a centralized database for bus full & change route status (controlled by driver)</li>
+          <li>Exploited Google Maps API, Google Direction API & Google Places API to implement various features like nearest bus stop, orbit bus route to the destination, estimated time & distance, traffic status etc.</li>
+        </ul>
+        <hr>
+
+  <a name="project4"></a>
+  <div style="float: left"><b>IP Reflector</b></div>
+                <div style="float: right">[ASU, Spring 2016]</div>
+        </br>
+        <ul>
+          <li>Developed an IP reflector which detects all kinds of data packets sent to victim and reflects them back to the attacker</li>
+          <li>Exploited Python-Scapy package for creating spoofed packets to fool the attacker</li>
+        </ul>
+
+  -->
   <br>
 </div>
