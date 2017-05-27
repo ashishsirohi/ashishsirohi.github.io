@@ -8,6 +8,50 @@ experience: passive
 asu: passive
 description: Projects by Ashish Sirohi
 ---
+
+<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
 <div class="projects">
   <h3>List of my Academic/Independent Projects</h3>
   <hr>
@@ -19,7 +63,7 @@ description: Projects by Ashish Sirohi
       <li><p><b><a href = "#project5">Project CTF(Capture the Flag)</a></b></p></li>
       <li><p><b><a href = "#project6">HTTP 1.1 Server in C with Backdoor functionality(Mini Project)</a></b></p></li>
       <li><p><b><a href = "#project7">QA System for Academic Research Papers and Ranking using MLN </a></b></p></li>
-      <li><p><b><a href = "#project8">Analyzing Geospatial Data and Finding NY Taxi Hotspots using GeoSpark (Hadoop)</a></b></p></li>
+      <li><p><b><a href = "#project8">Analyzing Geospatial Data and Finding NYC Taxi Hotspots using GeoSpark</a></b></p></li>
       <li><p><b><a href = "#project9">Restaurant Menu Web App with CRUD Functionality</a></b></p></li>
       <li><p><b><a href = "#project10">Help Me - Windows Phone App</a></b></p></li>
   </ol>
@@ -181,7 +225,63 @@ description: Projects by Ashish Sirohi
         <h4 style="display:inline">Instructor: </h4><a target="_blank" href="http://peace.eas.asu.edu/joolee/index.html">Prof. Joohyung Lee</a></br>
         <hr>
 
+  <a name="project8"></a>
+  <div style="float: left" ><h3>Analyzing Geospatial Data and Finding NYC Taxi Hotspots using GeoSpark</h3></div><br>
+                <div style="float: right">[ASU, Spring 2017]</div>
+        </br></br>
+        <h4>Summary</h4>
+        <p>We are living in an era where millions of people are going online each day and a huge amount of data is being generated and major part of the data is location based. It would be interesting to perform certain analysis and operations on the top of it to make some sense out of this huge data as it can benefit us in solving some major social issues as well as it may benefit private organizations. In this project, we have mainly focused on the spatial data to perform certain geo-spatial operations on the top of it. It is very important to choose an efficient system for doing such operations on a huge data set as geo-spatial operations are expensive, also we need to make sure that our system is scalable, can perform in-memory computation efficiently, can leverage the benefits of distributed systems. <a target="_blank" href="https://pdfs.semanticscholar.org/f0af/b80bad19054c72db579e87b4285b7d2dedab.pdf">GeoSpark</a> being an extension to the Spark for doing efficient in-memory operations on the spatial data will be an interesting choice for doing all spatial operations efficiently. We were also motivated to see how different algorithms can affect the system performance in different type of spatial operations.</p>
 
-  <h4>Work in Progress for remaining projects</h4>
+        <h4>My Contribution</h4>
+        <ul>
+          <li>Configured HDFS with one master and two slaves systems </li>
+          <li>Created GeoSpark SpatialRDD (PointRDD) from a given data set and performed Spatial operation like Range Query, KNN Query, Join Query etc on the top of it</li>
+          <li>Written Spatial join query using cartesian product and compared the result with in-built geospark spatial join query(using equi-join)</li>
+          <li>Implement a Spark program to calculate the <a target="_blank" href="http://resources.esri.com/help/9.3/arcgisengine/java/gp_toolref/spatial_statistics_tools/how_hot_spot_analysis_colon_getis_ord_gi_star_spatial_statistics_works.htm">Getis-Ord</a> statistic of NYC Taxi Trip datasets</li>
+        </ul>
+
+        <h4 style="display:inline">Tech Used: </h4>Java, Hadoop, Spark, GeoSpark, <a target="_blank" href="http://ganglia.sourceforge.net/">Ganglia</a></br>
+        
+        <h4 style="display:inline">Github Link: </h4>Can't be shared due to academic restriction</br>
+
+        <h4 style="display:inline">Contributors: </h4><a target="_blank", href="http://ashishsirohi.me">Ashish Sirohi</a>, <a target="_blank", href="https://www.linkedin.com/in/mahender-reddy-bommireddy-1039a375">Mahender Reddy Bommireddy</a>, <a target="_blank" href="https://www.linkedin.com/in/natarajant93">Natarajan Thinakaran</a>, <a target="_blank" href="https://www.linkedin.com/in/venkatesh-rajagopalan-394435104">Venkatesh Rajagopalan</a></br>
+        <h4 style="display:inline">Instructor: </h4><a target="_blank" href="http://faculty.engineering.asu.edu/sarwat/">Prof. Mohamed Sarwat</a></br>
+        <hr>
+
+  <a name="project9"></a>
+  <div style="float: left" ><h3>Restaurant Menu Web App with CRUD Functionality</h3></div><br>
+                <div style="float: right">[May 2017]</div>
+        </br></br>
+        <h4>Summary</h4>
+        <p>This project was a part of "Full Stack Foundation" course on Udacity.</p>
+        <h4>My Contribution</h4>
+        <ul>
+          <li>Built a web server in python to handle multiple GEt and POST requests with CRUD functionality</li>
+          <li>Developed a web app using Flask framework</li>
+          <li>User could add, update and delete restaurants, menu items etc in the web app</li>
+        </ul>
+
+        <h4 style="display:inline">Tech Used: </h4>Python, SQLAlchemy, Flask, HTML, CSS, JS</br>
+        
+        <h4 style="display:inline">Github Link: </h4><a target="_blank" href="https://github.com/ashishsirohi/Full-Stack-Foundation-Nanodegree-Udacity-">Restaurant Web App</a></br>
+
+        <h4 style="display:inline">Contributors: </h4>Individual</br>
+        <h4 style="display:inline">Instructor: </h4>Independent</br>
+        <hr>
+
+  <a name="project10"></a>
+  <div style="float: left" ><h3>Help Me - Windows Phone App</h3></div><br>
+                <div style="float: right">[Spring 2013]</div>
+        </br></br>
+        <h4>Summary</h4>
+        <p>"Help Me" is a windows phone platform based app which was developed to help the users to share their current location via SMS with their friends/family members in case of any emergency or any odd situation with a single button click.</p>
+
+        <h4 style="display:inline">Tech Used: </h4>C#, Windows Phone Programming</br>
+        
+        <h4 style="display:inline">Github Link: </h4>Not Available</br>
+
+        <h4 style="display:inline">Contributors: </h4>Individual</br>
+        <h4 style="display:inline">Instructor: </h4>Independent</br>
+
   <br>
 </div>
