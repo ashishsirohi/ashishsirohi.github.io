@@ -56,6 +56,7 @@ function topFunction() {
   <h3>List of my Academic/Independent Projects</h3>
   <hr>
   <ol>
+      <li><p><b><a href = "#project11">ASU Class Notifier</a></b></p></li>
       <li><p><b><a href = "#project1">Network Science Research Tool Project</a></b></p></li>
       <li><p><b><a href = "#project2">Extraction, Ranking & Indexing of Multimedia Features</a></b></p></li>
       <li><p><b><a href = "#project3">Android App for Tempe City Orbit Bus Service</a></b></p></li>
@@ -69,7 +70,33 @@ function topFunction() {
   </ol>
   <hr>
 
-  <a name="project1"></a>  
+  <a name="project11"></a>
+  <div style="float: left" ><h3>ASU Class Notifier</h3></div><br>
+                <div style="float: right">[Summer 2017]</div>
+        </br></br>
+        <h4>Summary</h4>
+        <p>Arizona State University is huge, home to approximately 80K students from around the world. And it offers a large variety of courses across different domains to accommodate all the students but sometimes, few courses are red hot, maybe because of the professor or maybe it's their last chance to get the course as they are graduating or it's a degree requirement course etc. but it's not possible to accommodate all. So the only hope of getting the course is if somebody changes his/her mind and drops it. But ASU doesn't have any system which can notify students if a course has been dropped or something similar. <br><br>In order to grab that open course, you have to be on the course site all the time and check it continuously. Lots of waste of time, right? and even after that, there is no guarantee that will get that course. I myself faced the issue and that's how I came up with the idea of writing a script which will track the status of the specified course and notify me once it is available. I wrote it, it worked and I got the course. But then I thought, why not help other students as everyone is not from Computer Science background or write code. So I turned my script into a fully functional <a target="_blank" href="https://asuca.herokuapp.com">web application</a> where users can sign up/login in and register for the courses they want to get notified for.
+        </p>
+
+        <h4>App features/My Work</h4>
+        <ul>
+          <li>User login/Signup implemented using Django Authentication system</li>
+          <li>User can search for the course availability, if not available, they can add that course to their notification list</li>
+          <li>User can manage their notification list by adding more courses or deleting existing ones</li>
+          <li>A Python script running continuously to check the status of the specified course shares the same Postgres database as of the Django Web App</li>
+          <li>Multithreading is being used to check the status of multiple courses in prarallel, if course is available, an email is being sent to all the users who have this course on their notification list</li>
+          <li>Designed the database efficiently to avoid unnecessary usage of resources</li>
+          <li>Used PhantomJS webdriver(optimized it) along with BeautifulSoup for efficient web page scrapping</li>
+        </ul>
+
+        <h4 style="display:inline">Tech Used: </h4>Python, Django with Authentication Systems & Django Forms, PostgreSQL, JavaScript, HTML, Bootstrap, jQuery, PhantomJS, Selenium Package, <code>BeautifulSoup</code>, <code>heroku</code></br>
+
+        <h4 style="display:inline">Heroku Link: </h4><a target="_blank" href="https://asuca.herokuapp.com">ASU Class Notifier</a></br>
+
+        <h4 style="display:inline">Contributors: </h4>Individual</br>
+       <hr>
+
+  <a name="project1"></a>
   <div style="float: left" ><h3>Network Science Research Tool</h3></div><br>
                 <div style="float: right">[ASU, Fall 2016]</div>
         </br></br>
@@ -87,7 +114,7 @@ function topFunction() {
         </ul>
 
         <h4 style="display:inline">Tech Used: </h4>Python, Django, PostgreSQL(<code>PostGIS</code>), JavaScript, HTML, Bootstrap, jQuery</br>
-        
+
         <h4 style="display:inline">Github Link: </h4><a target="_blank" href="https://github.com/ashishsirohi/NSRTP">NSRTP</a></br>
 
         <h4 style="display:inline">Contributors: </h4><a target="_blank" href="https://www.linkedin.com/in/abhishek-shrikant-bhat-9a342347">Abhishek Bhat</a>, <a target="_blank" href="https://www.linkedin.com/in/ashishsirohi/">Ashish Sirohi</a>, <a target="_blank" href="https://www.linkedin.com/in/gurumurthy-raghuraman-a3742b120">Gurumurthy Raghuraman</a></br>
@@ -110,7 +137,7 @@ function topFunction() {
         </ul>
 
         <h4 style="display:inline">Tech Used: </h4>Python, MATLAB Scripting, Visual basics</br>
-        
+
         <h4 style="display:inline">Github Link: </h4>Will be available soon</br>
 
         <h4 style="display:inline">Contributors: </h4><a target="_blank" href="https://www.linkedin.com/in/aditi-sonik-b7bbb574">Aditi Sonik</a>, <a target="_blank" href="https://www.linkedin.com/in/abhishek-shrikant-bhat-9a342347">Abhishek Bhat</a>, <a target="_blank" href="https://www.linkedin.com/in/ashishsirohi/">Ashish Sirohi</a>, <a target="_blank" href="https://www.linkedin.com/in/gurumurthy-raghuraman-a3742b120">Gurumurthy Raghuraman</a>, <a target="_blank" href="https://www.linkedin.com/in/meenakshi-ganesh-234ab613">Meenakshi Ganesh</a>, <a target="_blank" href="https://www.linkedin.com/in/vasudha-viswamurthy">Vashudha Viswamurthy</a></br>
@@ -131,11 +158,11 @@ function topFunction() {
           <li>Developed different UIs for users and drivers with login/signup feature
           <li>Maintained a centralized database for bus full & change route status (controlled by driver)</li>
         </ul>
-        
+
         <h4 style="display:inline">Future Work: </h4>Implementation of the second aspect i.e. real time tracking of the bus, for that Driver's app is ready, will be working on creating a server in middle to handle the location data for live tracking.</br>
 
         <h4 style="display:inline">Tech Used: </h4>Java, Android Studio, Google Map, Direction & Places API, Firebase Database</br>
-        
+
         <h4 style="display:inline">Github Link: </h4><a target="_blank" href="https://github.com/ashishsirohi/OrbitTracker">User's App</a>, <a target="_blank" href="https://github.com/ashishsirohi/OrbitDriver">Driver's App</a></br>
 
         <h4 style="display:inline">Contributors: </h4><a target="_blank" href="https://www.linkedin.com/in/ashishsirohi/">Ashish Sirohi</a>, <a target="_blank" href="https://www.linkedin.com/in/maitrayeepingale">Maitrayee Pingale</a>, <a target="_blank" href="https://www.linkedin.com/in/piyush-mahajan-2814b986">Piyush Mahajan</a>, <a target="_blank" href="https://www.linkedin.com/in/natarajant93">Natarajan Thinakaran</a></br>
@@ -156,7 +183,7 @@ function topFunction() {
         </ul>
 
         <h4 style="display:inline">Tech Used: </h4>Python, Scapy, <a target="_blank" href="https://www.wireshark.org/">Wireshark</a>, tcpdump</br>
-        
+
         <h4 style="display:inline">Github Link: </h4>Can't be shared due to academic restriction</br>
 
         <h4 style="display:inline">Contributors: </h4>Individual</br>
@@ -178,7 +205,7 @@ function topFunction() {
           <li>Successfully patched all the services and ran automated scripts in the test game server</li>
         </ul>
         <h4 style="display:inline">Tech Used: </h4>Python, C, SQL, JavaScript, PHP, HTML, Shell Scripting, <code>objdump</code></br>
-        
+
         <h4 style="display:inline">Github Link: </h4>Can't be shared due to academic restriction</br>
 
         <h4 style="display:inline">Contributors: </h4><a target="_blank" href="https://www.linkedin.com/in/ashishsirohi/">Ashish Sirohi</a>, <a target="_blank" href="https://www.linkedin.com/in/chaynika-saikia-05360928">Chaynika Saikia</a>, <a target="_blank" href="https://www.linkedin.com/in/niharikadutta12">Niharika Dutta</a>, <a target="_blank" href="https://in.linkedin.com/in/priyekant-aghi-a0819a77">Priyekant Aghi</a>, <a target="_blank" href="https://www.linkedin.com/in/sarthakkhanna">Sarthak Khanna</a>, <a target="_blank" href="https://www.linkedin.com/in/joganishaishav">Shaishav Jogani</a>, <a target="_blank" href="https://www.linkedin.com/in/supriyaashokkumar">Supriya</a></br>
@@ -194,7 +221,7 @@ function topFunction() {
         <p>A critical part of establishing persistence on a system is to leave a “backdoor” that allows the hacker access to the system at a later date, without exploiting the same vulnerabilities (as they may be fixed in the meantime). In this mini project, I have written a backdoor that pretends to be a web server. The goal of this mini project was to build an HTTP 1.1 server from scratch in C based on <a target="_blank" href="https://tools.ietf.org/html/rfc2616">RFC 2616</a> with backdoor functionality. The backdoor functionality is that when your server receives a GET request for a URL in the form of <code>/exec/&lt;command&gt;</code>, then your server should take <code>&lt;command&gt;</code> and execute it using the system <code>Linux system call</code> and the HTTP response will be the stdout of the executed command.</p>
 
         <h4 style="display:inline">Tech Used: </h4>C Socket Programming, Linux System Calls, <code>popen</code></br>
-        
+
         <h4 style="display:inline">Github Link: </h4>Can't be shared due to academic restriction</br>
 
         <h4 style="display:inline">Contributors: </h4>Individual</br>
@@ -218,7 +245,7 @@ function topFunction() {
         </ul>
 
         <h4 style="display:inline">Tech Used: </h4>Python, <a target="_blank" href="http://alchemy.cs.washington.edu">Alchemy</a>, <a target="_blank" href="http://peace.eas.asu.edu/joolee/papers/lpmln-kr.pdf">LPMLN</a>, Knowledge Graph, Dbpedia, <a target="_blank" href="http://www.nltk.org/">NLTK</a>, Wordnet</br>
-        
+
         <h4 style="display:inline">Github Link: </h4>Will be available soon</br>
 
         <h4 style="display:inline">Contributors: </h4><a target="_blank", href="https://www.linkedin.com/in/aditi-sonik-b7bbb574">Aditi Sonik</a>, <a target="_blank", href="https://www.linkedin.com/in/ashishsirohi/">Ashish Sirohi</a>, <a target="_blank", href="https://www.linkedin.com/in/shashank-bhushan-7a9b59a9">Shashank Bhushan</a>, <a target="_blank", href="https://www.linkedin.com/in/yihan-lu-946378130">Yihan Lu</a></br>
@@ -241,7 +268,7 @@ function topFunction() {
         </ul>
 
         <h4 style="display:inline">Tech Used: </h4>Java, Hadoop, Spark, GeoSpark, <a target="_blank" href="http://ganglia.sourceforge.net/">Ganglia</a></br>
-        
+
         <h4 style="display:inline">Github Link: </h4>Can't be shared due to academic restriction</br>
 
         <h4 style="display:inline">Contributors: </h4><a target="_blank", href="https://www.linkedin.com/in/ashishsirohi/">Ashish Sirohi</a>, <a target="_blank", href="https://www.linkedin.com/in/mahender-reddy-bommireddy-1039a375">Mahender Reddy Bommireddy</a>, <a target="_blank" href="https://www.linkedin.com/in/natarajant93">Natarajan Thinakaran</a>, <a target="_blank" href="https://www.linkedin.com/in/venkatesh-rajagopalan-394435104">Venkatesh Rajagopalan</a></br>
@@ -262,7 +289,7 @@ function topFunction() {
         </ul>
 
         <h4 style="display:inline">Tech Used: </h4>Python, SQLAlchemy, Flask, HTML, CSS, JS</br>
-        
+
         <h4 style="display:inline">Github Link: </h4><a target="_blank" href="https://github.com/ashishsirohi/Full-Stack-Foundation-Nanodegree-Udacity-">Restaurant Web App</a></br>
 
         <h4 style="display:inline">Contributors: </h4>Individual</br>
@@ -277,7 +304,7 @@ function topFunction() {
         <p>"Help Me" is a windows phone platform based app which was developed to help the users to share their current location via SMS with their friends/family members in case of any emergency or any odd situation with a single button click.</p>
 
         <h4 style="display:inline">Tech Used: </h4>C#, Windows Phone Programming</br>
-        
+
         <h4 style="display:inline">Github Link: </h4>Not Available</br>
 
         <h4 style="display:inline">Contributors: </h4>Individual</br>
