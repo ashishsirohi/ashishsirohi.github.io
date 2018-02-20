@@ -120,7 +120,7 @@
 		height: 100%;
 		background: rgba(0, 0, 0, 0.1);
 		position: absolute;
-		left: 35%;
+		left: 25%;
 		top: 0;
 	}
 	#resume .timeline-block {
@@ -136,7 +136,7 @@
 		text-align: center;
 		color: #FFFFFF;
 		position: absolute;
-		left: 37.1%;
+		left: 27.1%;
 		top: 2.5rem;
 		margin-left: -2.4rem;
 	}
@@ -148,8 +148,8 @@
 
 	#resume .timeline-header {
 		float: left;
-		width: 35%;
-		padding-right: 90px;
+		width: 25%;
+		padding-right: 30px;
 		text-align: right;
 	}
 	#resume .timeline-header h3 {
@@ -162,8 +162,8 @@
 		color: #888888;
 	}
 	#resume .timeline-content {
-		margin-left: 35%;
-		padding-left: 60px;
+		margin-left: 25%;
+		padding-left: 30px;
 	}
 	#resume .timeline-content h4 {
 		position: relative;
